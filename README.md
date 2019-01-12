@@ -8,3 +8,36 @@ The typical Unix/Linux/Posix-compliant installation includes the Korn Shell (ksh
 Other shells available on a machine or available for download and/or purchase include ash, msh, ysh, zsh (a particularly common enhanced Korn Shell), the Tenex C Shell (tcsh), a Perl-like shell (psh) and others. Related programs such as shells based on Python, Ruby, C, Java, Perl, Pascal, Rexx &c in various forms are also widely available. Another somewhat common shell is osh, whose manual page states it "is an enhanced, backward-compatible port of the standard command interpreter from Sixth Edition UNIX."
 
 Windows-Unix interoperability software such as the MKS Toolkit, Cygwin, UWIN, Interix and others make the above shells and Unix programming available on Windows systems, providing functionality all the way down to signals and other inter-process communication, system calls and APIs. The Hamilton C Shell is a Windows shell that is very similar to the Unix C Shell. Microsoft distributes Windows Services for UNIX for use with its NT-based operating systems in particular, which have a Posix environmental subsystem.
+
+9. User interfaces
+9.1 Using select to make simple menus
+```shell
+            #!/bin/bash
+           OPTIONS="Hello Quit"
+           select opt in $OPTIONS; do
+               if [ "$opt" = "Quit" ]; then
+                echo done
+                exit
+               elif [ "$opt" = "Hello" ]; then
+                echo Hello World
+               else
+                clear
+                echo bad option
+               fi
+           done
+ ```
+If you run this script you'll see that it is a programmer's dream for text based menus. You'll probably notice that it's very similar to the 'for' construction, only rather than looping for each 'word' in $OPTIONS, it prompts the user.
+
+9.2 Using the command line
+```shell
+           #!/bin/bash        
+          if [ -z "$1" ]; then 
+              echo usage: $0 directory
+              exit
+          fi
+          SRCD=$1
+          TGTD="/var/backups/"
+          OF=home-$(date +%Y%m%d).tgz
+          tar -cZf $TGTD$OF $SRCD
+```  
+What this script does should be clear to you. The expression in the first conditional tests if the program has received an argument ($1) and quits if it didn't, showing the user a little usage message. The rest of the script should be clear at this point.
