@@ -22,11 +22,12 @@ The until loop is almost equal to the while loop, except that the code is execut
 If you suspect that while and until are very similar you are right.
 
 7.1 For sample
+```shell
          #!/bin/bash
         for i in $( ls ); do
             echo item: $i
         done
-        
+```     
 On the second line, we declare i to be the variable that will take the different values contained in $( ls ).
 
 The third line could be longer if needed, or there could be more lines before the done (4).
