@@ -9,6 +9,50 @@ Other shells available on a machine or available for download and/or purchase in
 
 Windows-Unix interoperability software such as the MKS Toolkit, Cygwin, UWIN, Interix and others make the above shells and Unix programming available on Windows systems, providing functionality all the way down to signals and other inter-process communication, system calls and APIs. The Hamilton C Shell is a Windows shell that is very similar to the Unix C Shell. Microsoft distributes Windows Services for UNIX for use with its NT-based operating systems in particular, which have a Posix environmental subsystem.
 
+8. Functions
+
+As in almost any programming language, you can use functions to group pieces of code in a more logical way or practice the divine art of recursion.
+
+Declaring a function is just a matter of writing function my_func { my_code }.
+
+Calling a function is just like calling another program, you just write its name.
+
+8.1 Functions sample
+```shell
+            #!/bin/bash 
+           function quit {
+               exit
+           }
+           function hello {
+               echo Hello!
+           }
+           hello
+           quit
+           echo foo 
+```    
+Lines 2-4 contain the 'quit' function. Lines 5-7 contain the 'hello' function If you are not absolutely sure about what this script does, please try it!.
+
+Notice that a functions don't need to be declared in any specific order.
+
+When running the script you'll notice that first: the function 'hello' is called, second the 'quit' function, and the program never reaches line 10.
+
+8.2 Functions with parameters sample
+```shell
+                 #!/bin/bash 
+                function quit {
+                   exit
+                }  
+                function e {
+                    echo $1 
+                }  
+                e Hello
+                e World
+                quit
+                echo foo 
+```
+           
+This script is almost identically to the previous one. The main difference is the funcion 'e'. This function, prints the first argument it receives. Arguments, within funtions, are treated in the same manner as arguments given to the script.
+
 9. User interfaces
 
 9.1 Using select to make simple menus
