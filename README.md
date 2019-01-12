@@ -52,6 +52,7 @@ When running the script you'll notice that first: the function 'hello' is called
 ```
            
 This script is almost identically to the previous one. The main difference is the funcion 'e'. This function, prints the first argument it receives. Arguments, within funtions, are treated in the same manner as arguments given to the script.
+
 9. User interfaces
 
 9.1 Using select to make simple menus
