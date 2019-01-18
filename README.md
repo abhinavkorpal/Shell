@@ -27,7 +27,11 @@ If you suspect that while and until are very similar you are right.
         for i in $( ls ); do
             echo item: $i
         done
-```     
+```
+```shell
+output:
+         item: README.md
+```
 On the second line, we declare i to be the variable that will take the different values contained in $( ls ).
 
 The third line could be longer if needed, or there could be more lines before the done (4).
@@ -160,12 +164,12 @@ echo "Hi $FN $LN"
 
 ```shell
 output:
-Please, enter your name
-abhinav
-Hi abhinav!
-Please, enter your firstname and lastname
-abhinav korpal
-Hi abhinav korpal
+         Please, enter your name
+         abhinav
+         Hi abhinav!
+         Please, enter your firstname and lastname
+         abhinav korpal
+         Hi abhinav korpal
 ```
 10.4 Getting the return value of a program
 In bash, the return value of a program is stored in a special variable called $?.
@@ -180,8 +184,8 @@ This illustrates how to capture the return value of a program, I assume that the
 ```
 ```shell
 output:
-rv: 1
-rv: 0
+         rv: 1
+         rv: 0
 ```
 10.5 Capturing a commands output
 This little scripts show all tables from all databases (assuming you got MySQL installed). Also, consider changing the 'mysql' command to use a valid username and password.
