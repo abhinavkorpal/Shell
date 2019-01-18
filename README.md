@@ -95,7 +95,20 @@ This script 'emulates' the well known (C, Pascal, perl, etc) 'for' structure
              let COUNTER-=1
          done
 ```
-
+```shell
+output:
+         COUNTER 20
+         COUNTER 19
+         COUNTER 18
+         COUNTER 17
+         COUNTER 16
+         COUNTER 15
+         COUNTER 14
+         COUNTER 13
+         COUNTER 12
+         COUNTER 11
+         COUNTER 10
+```
 8. Functions
 
 As in almost any programming language, you can use functions to group pieces of code in a more logical way or practice the divine art of recursion.
