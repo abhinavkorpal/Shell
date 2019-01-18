@@ -70,7 +70,19 @@ fiesh suggested adding this form of looping. It's a for loop more similar to C/p
              echo The counter is $COUNTER
              let COUNTER=COUNTER+1 
          done
-```      
+```
+```shell
+         The counter is 0
+         The counter is 1
+         The counter is 2
+         The counter is 3
+         The counter is 4
+         The counter is 5
+         The counter is 6
+         The counter is 7
+         The counter is 8
+         The counter is 9
+```
 This script 'emulates' the well known (C, Pascal, perl, etc) 'for' structure
 
 7.4 Until sample
