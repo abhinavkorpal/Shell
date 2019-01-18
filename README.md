@@ -167,3 +167,19 @@ Please, enter your firstname and lastname
 abhinav korpal
 Hi abhinav korpal
 ```
+10.4 Getting the return value of a program
+In bash, the return value of a program is stored in a special variable called $?.
+
+This illustrates how to capture the return value of a program, I assume that the directory dada does not exist. (This was also suggested by mike)
+```shell
+         #!/bin/bash
+        cd /dada &> /dev/null
+        echo rv: $?
+        cd $(pwd) &> /dev/null
+        echo rv: $?
+```
+```shell
+output:
+rv: 1
+rv: 0
+```
