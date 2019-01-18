@@ -143,3 +143,27 @@ If you run this script you'll see that it is a programmer's dream for text based
           tar -cZf $TGTD$OF $SRCD
 ```  
 What this script does should be clear to you. The expression in the first conditional tests if the program has received an argument ($1) and quits if it didn't, showing the user a little usage message. The rest of the script should be clear at this point.
+
+10. Misc
+10.1 Reading user input with read
+In many ocations you may want to prompt the user for some input, and there are several ways to achive this. This is one of those ways. As a variant, you can get multiple values with read, this example may clarify this.
+```shell
+#!/bin/bash
+echo Please, enter your name
+read NAME 
+echo "Hi $NAME!"
+
+echo Please, enter your firstname and lastname
+read FN LN 
+echo "Hi $FN $LN"
+```
+
+```shell
+output:
+Please, enter your name
+abhinav
+Hi abhinav!
+Please, enter your firstname and lastname
+abhinav korpal
+Hi abhinav korpal
+```
