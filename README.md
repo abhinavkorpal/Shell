@@ -48,7 +48,20 @@ fiesh suggested adding this form of looping. It's a for loop more similar to C/p
         do
                 echo $i
         done    
- ```       
+ ```
+ ```shell
+ output:
+         1
+         2
+         3
+         4
+         5
+         6
+         7
+         8
+         9
+         10
+```
 7.3 While sample
 ```shell
           #!/bin/bash 
