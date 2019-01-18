@@ -183,3 +183,12 @@ output:
 rv: 1
 rv: 0
 ```
+10.5 Capturing a commands output
+This little scripts show all tables from all databases (assuming you got MySQL installed). Also, consider changing the 'mysql' command to use a valid username and password.
+
+         #!/bin/bash
+        DBS=`mysql -uroot  -e"show databases"`
+        for b in $DBS ;
+        do
+                mysql -uroot -e"show tables from $b"
+        done
