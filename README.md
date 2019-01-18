@@ -72,6 +72,7 @@ fiesh suggested adding this form of looping. It's a for loop more similar to C/p
          done
 ```
 ```shell
+output:
          The counter is 0
          The counter is 1
          The counter is 2
