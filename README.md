@@ -303,9 +303,13 @@ Exit Code	Description
 30	Read-only file system
 
 31	Too many links
+
 32	Broken pipe
+
 33	Numerical argument out of domain
+
 34	Numerical result out of range
+
 35	Resource deadlock avoided
 36	File name too long
 37	No locks available
