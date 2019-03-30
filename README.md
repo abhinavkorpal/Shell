@@ -409,6 +409,25 @@ Exit Code	Description
 132	Operation not possible due to RF-kill
 133	Memory page has hardware error
 
+### Let's Echo
+
+A quick introduction to 'Echo' 
+This is the equivalent of common output commands in most programming language (print or puts statements).
+
+For Example:
+
+echo "Greetings"
+This outputs just one word "Greetings" (without the quotation marks).
+
+echo "Greetings $USER, your current working directory is $PWD"
+This picks up the values of the environment variables  and  and displays something like:
+
+Greetings prashantb1984, your current working directory is /home/prashantb1984  
+The above message, of course, will vary from system to system, depending on the setting of environment variables.
+
+Recommended Resource 
+A quick but useful tutorial for bash newcomers is here. 
+
 ### More on Conditionals
 
 if statements in Bash are often used in four important ways:
