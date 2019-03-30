@@ -409,3 +409,22 @@ Exit Code	Description
 132	Operation not possible due to RF-kill
 133	Memory page has hardware error
 
+### More on Conditionals
+
+if statements in Bash are often used in four important ways:
+
+1. if...then...fi statements
+2. if...then...fi...else statements  
+3. if..elif..else..fi  
+4. if..then..else..if..then..fi..fi.. (Nested Conditionals)
+
+The Recommended Resources section may give you a clearer idea of conditionals in Bash.
+
+Recommended Resources
+
+A quick but useful tutorial for Bash newcomers is here. 
+Handling input is documented and explained quite well on this page. 
+Different ways in which 'if' statements may be used in Bash are demonstrated here.
+
+
+
