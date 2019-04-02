@@ -315,8 +315,11 @@ Exit Code	Description
 36	File name too long
 
 37	No locks available
+
 38	Function not implemented
+
 39	Directory not empty
+
 40	Too many levels of symbolic links
 42	No message of desired type
 43	Identifier removed
