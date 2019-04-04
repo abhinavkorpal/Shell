@@ -321,8 +321,11 @@ Exit Code	Description
 39	Directory not empty
 
 40	Too many levels of symbolic links
+
 42	No message of desired type
+
 43	Identifier removed
+
 44	Channel number out of range
 45	Level 2 not synchronized
 46	Level 3 halted
